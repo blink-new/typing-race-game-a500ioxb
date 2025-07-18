@@ -18,7 +18,7 @@ export function SpeedGauge({ wpm, maxWpm = 120 }: SpeedGaugeProps) {
           <path
             d="M 20 80 A 80 80 0 0 1 180 80"
             fill="none"
-            stroke="hsl(var(--muted))"
+            stroke="#374151"
             strokeWidth="8"
             className="opacity-30"
           />
@@ -27,21 +27,21 @@ export function SpeedGauge({ wpm, maxWpm = 120 }: SpeedGaugeProps) {
           <path
             d="M 20 80 A 80 80 0 0 1 100 20"
             fill="none"
-            stroke="hsl(var(--racing-success))"
+            stroke="#10B981"
             strokeWidth="8"
             className="opacity-60"
           />
           <path
             d="M 100 20 A 80 80 0 0 1 140 40"
             fill="none"
-            stroke="hsl(var(--racing-yellow))"
+            stroke="#F59E0B"
             strokeWidth="8"
             className="opacity-60"
           />
           <path
             d="M 140 40 A 80 80 0 0 1 180 80"
             fill="none"
-            stroke="hsl(var(--racing-orange))"
+            stroke="#FF6B35"
             strokeWidth="8"
             className="opacity-60"
           />
@@ -61,7 +61,7 @@ export function SpeedGauge({ wpm, maxWpm = 120 }: SpeedGaugeProps) {
                   y1={y1}
                   x2={x2}
                   y2={y2}
-                  stroke="hsl(var(--foreground))"
+                  stroke="#F3F4F6"
                   strokeWidth="2"
                   className="opacity-60"
                 />
@@ -84,7 +84,7 @@ export function SpeedGauge({ wpm, maxWpm = 120 }: SpeedGaugeProps) {
             y1="80"
             x2={100 + 55 * Math.cos((angle - 90) * Math.PI / 180)}
             y2={80 + 55 * Math.sin((angle - 90) * Math.PI / 180)}
-            stroke="hsl(var(--racing-orange))"
+            stroke="#FF6B35"
             strokeWidth="3"
             strokeLinecap="round"
             initial={{ rotate: -90 }}
@@ -98,7 +98,7 @@ export function SpeedGauge({ wpm, maxWpm = 120 }: SpeedGaugeProps) {
             cx="100"
             cy="80"
             r="4"
-            fill="hsl(var(--racing-orange))"
+            fill="#FF6B35"
           />
         </svg>
       </div>
